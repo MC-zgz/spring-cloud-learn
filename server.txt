@@ -1,0 +1,10 @@
+Spring Cloud
+服务注册中心：Eureka zookeeper Consul
+服务调用：Ribbon OpenFeign
+服务降级: Hystrix
+服务网关 gateway
+服务配置：Config
+服务总线：Bus
+
+Spring Cloud Alibaba：
+
