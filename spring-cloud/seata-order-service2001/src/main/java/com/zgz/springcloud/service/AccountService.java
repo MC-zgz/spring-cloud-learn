@@ -1,0 +1,14 @@
+package com.zgz.springcloud.service;
+
+import com.zgz.springcloud.entities.CommonResult;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.math.BigDecimal;
+@FeignClient(value = "seata-account-service")
+public interface AccountService {
+    @PostMapping(value = "/account/decrease")
+    CommonResult decrease(@RequestParam("userId")long userId,
+                          @RequestParam("money")BigDecimal money);
+}
