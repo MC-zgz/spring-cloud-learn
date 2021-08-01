@@ -6,6 +6,6 @@
     <!--减库存-->
     <update id="decrease">
         update t_account set residue = residue - #{money},used = used + #{money}
-        where user_id = #{user_id}
+        where user_id = #{userId}
     </update>
 </mapper>

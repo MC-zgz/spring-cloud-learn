@@ -14,7 +14,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1/seata_order?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
     username: root
-    password:
+    password: 123
 #    type: com.alibaba.druid.pool.DruidDataSource
 feign:
   hystrix:

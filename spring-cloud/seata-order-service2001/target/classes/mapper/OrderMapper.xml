@@ -12,10 +12,10 @@
     </resultMap>
 
     <insert id="create" parameterType="com.zgz.springcloud.pojo.Order">
-        insert into t_order values (default,#{user_id},#{product_id},#{count},#{money},0);
+        insert into t_order values (default,#{userId},#{productId},#{count},#{money},0);
     </insert>
 
     <update id="update">
-        update t_order set status = 1 where user_id = #{user_id} and status = #{status};
+        update t_order set status = 1 where user_id = #{userId} and status = #{status};
     </update>
 </mapper>

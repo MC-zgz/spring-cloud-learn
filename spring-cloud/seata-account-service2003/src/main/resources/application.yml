@@ -12,9 +12,9 @@ spring:
         tx-service-group: fsp_tx_group
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1/seata_order?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    url: jdbc:mysql://127.0.0.1/seata_account?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
     username: root
-    password:
+    password: 123
 #    type: com.alibaba.druid.pool.DruidDataSource
 feign:
   hystrix:

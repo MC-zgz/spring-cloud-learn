@@ -9,5 +9,5 @@ public interface OrderMapper {
     //新增订单
     void create(Order order);
     //修改订单状态
-    void update(@Param("user_id") Long userId,@Param("status") Integer status);
+    void update(@Param("userId") Long userId,@Param("status") Integer status);
 }
